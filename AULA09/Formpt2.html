@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+
+    <fieldset>
+        <legend>informacoes do aluno</legend>
+
+        <h1>Revisao</h1>
+
+        <form action="mailto:vergueirolimadavi@gmail.com" method="post">
+            <label for="Nome">Nome:</label>
+            <input type="text" id="Nome">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Ex: davimarcos@gmail.com">
+            <br><br>
+
+            <label for="endereco">Endereco:</label>
+            <input type="text" id="endereco" name="endereco" size="17">
+            <br><br>
+
+            <label for="idade">Idade:</label>
+            <input type="text" id="idade" name="idade" size="1">
+
+            <label for="CPF">CPF:</label>
+            <input type="text" id="CPF" name="CPF" size="9" placeholder="Ex: 123123433-3">
+            <br><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha">
+
+
+
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <h2>selecione o curso de interesse</h2>
+
+        <legend>Cursos</legend>
+
+        <input type="radio" name="curso" id="p1" value="p1">
+        <label for="p1">Dev-web</label>
+        <br><br>
+        <input type="radio" name="curso" id="p2" value="p2">
+        <label for="p2">Suporte_T.I</label>
+        <br><br>
+        <input type="radio" name="curso" id="p3" value="p3">
+        <label for="p3">I_cloud</label>
+        <br><br>
+        <input type="radio" name="curso" id="p4" value="p4">
+        <label for="p4">microsoft zendesk</label>
+    </fieldset>
+    <br><br>
+
+    <fieldset>
+        <legend>nossas unidades</legend>
+
+        <h2>Unidades da ios</h2>
+
+        <label for="listadasunidades">selecione sua unidade:</label> <br>
+        <select name="listadasunidades" id="listadasunidades">
+
+            <option value="p1" disabled selected>unidades</option>
+            <option value="santana">santana</option>
+            <option value="santo_amaro">Santo amaro
+            <option>
+            <option value="Diadema">Diadema</option>
+            <option value="itaquera">itaquera</option>
+        </select>
+
+        <br><br>
+
+        <label for="listadasunidades">Selecione sua unidade:</label>
+
+        <br>
+
+        <select name="listadasunidades" id="listadasunidades">
+
+            <option value="op1" selected hidden></option>
+            <option value="santana">santana</option>
+            <option value="santo_amaro">Santo amaro
+            <option>
+            <option value="Diadema">Diadema</option>
+            <option value="itaquera">itaquera</option>
+        </select>
+        <br><br>
+
+        <p>onde voce mora:</p>
+        <input type="text" list="cidade" autocomplete="on" name="listadascidades" placeholder="sua cidade">
+        <datalist>
+            <option value="sao paulo"></option>
+            <option value="campinas"></option>
+            <option value="santo_andre"></option>
+            <option value="juquitiba"></option>
+        </datalist>
+        <br><br>
+
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>sua opiniao sobre algo</legend>
+
+        <textarea name="avaliacao" id="avaliacao" cols="30" rows="10" placeholder="deixe aqui o seu comentario."
+            maxlength="100">
+</textarea>
+    </fieldset>
+
+    <br><br>
+    <input type="submit" value="enviar">
+
+    </form>
+
+</body>
+</html>
